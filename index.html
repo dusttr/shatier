@@ -20,8 +20,8 @@
 
 	<!-- Main Slides -->
 	<div class="w3-container" style="margin:0; padding:0;">
-		<img class="slides animate-fading" src="https://dusttr.github.io/shatier/img/chillin.JPG" alt="chilling">
-		<img class="slides animate-fading" src="https://dusttr.github.io/shatier/img/rockin_out.JPG" alt="rocking out">
+		<img class="slides animate-fading" src="/img/chillin.JPG" alt="chilling">
+		<img class="slides animate-fading" src="/img/rockin_out.JPG" alt="rocking out">
 	</div>
 
 
@@ -30,73 +30,81 @@
 	<div class="w3-top w3-center">
 		<div class="bar-items">
 			<a href="#home" class="bar-item">Home</a>
-			<a href="#about" class="bar-item">About</a>
 			<a href="#members" class="bar-item">Members</a>
+			<a href="#about" class="bar-item">About</a>
 			<a href="#contact" class="bar-item">Contact</a>
 		</div>
 	</div>
 
 
 
+
+	<!-- Members -->
+	<div id="members" class="w3-container w3-padding-64">
+		<h2 class="w3-center w3-padding-32"><hr>The Three Muskshatiers</h2>
+		<div class="w3-row w3-center">
+
+			<div class="w3-third">
+				<img src="/img/josh.jpg" alt="Josh" id= "josh-pic">
+				<p>Josh</p>
+				<i class="w3-opacity">Saxophone</i>
+			</div>
+
+			<div class="w3-third">
+				<img src="/img/max.jpg" alt="Max" id= "max-pic">
+				<p>Max</p>
+				<i class="w3-opacity">Drumset</i>
+			</div>
+
+			<div class="w3-third">
+				<img src="/img/wes.jpg" alt="Wes" id= "wes-pic">
+				<p>Wes</p>
+				<i class="w3-opacity">Bass Guitar</i>
+			</div>
+
+		</div>
+	</div>
+
+
+	<hr>
+
+
 	<!-- About -->
 	<div id="about" class="w3-container w3-padding-64">
-		<h1 class="w3-center w3-padding-24"><hr>About the Shatiers</h1>
+		<h1 class="w3-center w3-padding-32">About the Shatiers</h1>
 		<p  class="w3-opacity w3-center"><i>The best band in anywhere</i></p>
 		<p class="w3-center w3-padding-24">We are a band residing in Dundee Michigan. We play primarily jazz and funk music. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<hr><br></p>
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
 
-
-
-	<!-- Members -->
-	<div id="members" class="w3-container w3-padding-64">
-		<h2 class="w3-center">The Three Muskshatiers</h2>
-		<div class="w3-row w3-center">
-
-			<div class="w3-third">
-				<img src="https://dusttr.github.io/shatier/img/josh.jpg" alt="Josh" id= "josh-pic">
-				<p>Josh</p>
-			</div>
-
-			<div class="w3-third">
-				<img src="https://dusttr.github.io/shatier/img/max.jpg" alt="Max" id= "max-pic">
-				<p>Max</p>
-			</div>
-
-			<div class="w3-third">
-				<img src="https://dusttr.github.io/shatier/img/wes.jpg" alt="Wes" id= "wes-pic">
-				<p>Wes</p>
-			</div>
-
-		</div>
-	</div>
 
 	<hr>
 
 
 	<!-- Contact -->
 	<div id="contact" class="w3-container w3-center w3-padding-64">
-		<h2 class="w3-wide">CONTACT</h2>
+		<h2 class="w3-wide w3-padding-32">CONTACT</h2>
 		Dundee, MI<br>
 		Phone: 123-456-7890<br>
 		Email: email@placeholder.com<br>
 		<p class="w3-opacity w3-center"><i>Want to talk? Drop a note</i></p>
 
-		<form action="/" target="">
-			<input type="text" placeholder="Name" required name="Name" size="50">
-			<input type="email" placeholder="Email" required name="Email" size="50">
-			<input type="text" placeholder="Message" required name="Message" size="50">
+		<form method="POST" action="https://formsubmit.co/breadybogus@gmail.com" target="_blank">
+			<input type="text" id="name" placeholder="Your Name" name="Name" size="50" required>
+			<input type="email" id="email" placeholder="Your Email" name="Email" size="50" required>
+			<textarea id="message" id="message" rows="4" placeholder="Whats happenin?" name="Message" required></textarea>
+			<input type="hidden" name="_next" value="">
 			<br>
 			<button class="w3-button w3-black" type="submit">SEND</button>
 		</form>
 		<br>
-		<hr>
-		<img src="https://www.w3schools.com/w3css/map.jpg" class="w3-image w3-padding-24" style="width:100%;">
 	</div>
+	<hr>
+
 
 <!-- Content End -->
 </div>
@@ -105,6 +113,7 @@
 
 <br>
 
-<script src="scripts.js" src="https://www.w3schools.com/lib/w3.js"></script>
 </body>
+<script src="scripts.js"></script> 
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 </html>

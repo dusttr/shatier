@@ -4,19 +4,27 @@ html, body {
 	margin:0; 
 	padding: 0;
 	background-color: rgb(20, 20, 20);
+	color: rgb(200, 200, 200);
 }
 
-h1 {font-size: 4vw;}
+h1 {font-size: 4vw; color:white;}
 
-h2 {font-size: 3vw;}
+h2 {font-size: 3vw; color:white;}
 
-p {font-size: 1.5vw;}
+p {font-size: 1.6vw;}
 
 hr {
 	border: 2px solid whitesmoke;
 }
 
 input {
+	display: block;
+	padding: 12px 20px;
+  	margin: auto;
+  	margin-bottom: 10px;
+  	box-sizing: border-box;
+}
+textarea {
 	display: block;
 	padding: 12px 20px;
   	margin: auto;
@@ -33,6 +41,7 @@ input {
   	transform: translate(-50%, -50%);
   	z-index: 1;
   	user-select: none;
+  	color: white;
 }
 
 
